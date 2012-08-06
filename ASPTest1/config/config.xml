@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <!-- Requirements -->
+  <test_pdf2swf>true</test_pdf2swf>
+  <test_pdf2json>false</test_pdf2json>
+  <!-- General Settings -->
+  <allowcache>true</allowcache>
+  <splitmode>false</splitmode>
+  <path.pdf>E:\</path.pdf>
+  <path.swf>E:\</path.swf>
+  <!-- External Commands -->
+  <cmd.conversion.singledoc>"D:\Program Files\SWFTools\pdf2swf.exe" "{path.pdf}{pdffile}" -o "{path.swf}{pdffile}.swf" -f -T 9 -t -s storeallcharacters</cmd.conversion.singledoc>
+  <cmd.conversion.splitpages>"D:\Program Files\SWFTools\pdf2swf.exe" "{path.pdf}{pdffile}" -o "{path.swf}{pdffile}%.swf" -f -T 9 -t -s storeallcharacters -s linknameurl</cmd.conversion.splitpages>
+  <cmd.searching.extracttext>"D:\Program Files\SWFTools\swfstrings.exe" "{path.swf}{swffile}"</cmd.searching.extracttext>
+  <cmd.conversion.renderpage>
+  </cmd.conversion.renderpage>
+  <cmd.conversion.rendersplitpage>
+  </cmd.conversion.rendersplitpage>
+  <cmd.conversion.jsonfile>
+  </cmd.conversion.jsonfile>
+  <pdf2swf>True</pdf2swf>
+  <admin.username>admin</admin.username>
+  <admin.password>password</admin.password>
+</config>
