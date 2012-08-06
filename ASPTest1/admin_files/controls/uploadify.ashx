@@ -1,6 +1,8 @@
 ﻿<%@ WebHandler Language="C#" Class="uploadify" %>
 using System;
 using System.Web;
+using System.Runtime.Serialization;
+
 public class uploadify : IHttpHandler
 {
     protected System.Web.UI.HtmlControls.HtmlInputFile filMyFile;
